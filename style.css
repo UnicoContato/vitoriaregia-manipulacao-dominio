@@ -28,13 +28,3 @@ html {
     opacity: 1;
     transform: translateY(0);
 }
-
-/* Ajuste para o mapa ficar grayscale e colorido ao hover */
-iframe {
-    filter: grayscale(100%);
-    transition: filter 0.3s;
-}
-
-iframe:hover {
-    filter: grayscale(0%);
-}

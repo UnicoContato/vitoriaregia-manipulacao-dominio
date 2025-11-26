@@ -1,241 +1,506 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vitória Régia - Farmácia de Manipulação</title>
-    <meta name="description" content="Farmácia Vitória Régia: 40 anos de tradição, saúde e inovação no Acre. Manipulação, homeopatia e linha baby.">
-    
+    <meta
+      name="description"
+      content="Farmácia Vitória Régia: 40 anos de tradição, saúde e inovação no Acre. Manipulação, homeopatia e linha baby."
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {
-                            DEFAULT: '#047857', 
-                            light: '#34d399',
-                            dark: '#064e3b',
-                        },
-                        secondary: '#f3f4f6',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: "#047857",
+                light: "#34d399",
+                dark: "#064e3b",
+              },
+              secondary: "#f3f4f6",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
     </script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="font-sans text-gray-700 antialiased bg-gray-50">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font-sans text-gray-700 antialiased bg-gray-50">
+    <header
+      id="main-header"
+      class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm shadow-md transition-transform duration-300"
+    >
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a
+          href="#"
+          class="text-2xl font-bold text-primary-dark tracking-wide uppercase"
+        >
+          Vitória Régia
+        </a>
 
-    <header id="main-header" class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm shadow-md transition-transform duration-300">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-primary-dark tracking-wide uppercase">
-                Vitória Régia
-            </a>
+        <nav class="hidden md:flex space-x-8 items-center">
+          <a
+            href="#inicio"
+            class="hover:text-primary transition-colors font-medium"
+            >Início</a
+          >
+          <a
+            href="#sobre"
+            class="hover:text-primary transition-colors font-medium"
+            >Sobre Nós</a
+          >
+          <a
+            href="#servicos"
+            class="hover:text-primary transition-colors font-medium"
+            >Serviços</a
+          >
+          <a
+            href="#galeria"
+            class="hover:text-primary transition-colors font-medium"
+            >Galeria</a
+          >
+          <a
+            href="#contato"
+            class="hover:text-primary transition-colors font-medium"
+            >Contato</a
+          >
+          <a
+            href="https://wa.me/5568999433634"
+            target="_blank"
+            class="bg-primary hover:bg-primary-dark text-white px-5 py-2 rounded-full font-semibold transition-all shadow-lg flex items-center gap-2"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+              />
+            </svg>
+            Peça pelo WhatsApp
+          </a>
+        </nav>
 
-            <nav class="hidden md:flex space-x-8 items-center">
-                <a href="#inicio" class="hover:text-primary transition-colors font-medium">Início</a>
-                <a href="#sobre" class="hover:text-primary transition-colors font-medium">Sobre Nós</a>
-                <a href="#servicos" class="hover:text-primary transition-colors font-medium">Serviços</a>
-                <a href="#galeria" class="hover:text-primary transition-colors font-medium">Galeria</a>
-                <a href="#contato" class="hover:text-primary transition-colors font-medium">Contato</a>
-                <a href="https://wa.me/556884214918" target="_blank" class="bg-primary hover:bg-primary-dark text-white px-5 py-2 rounded-full font-semibold transition-all shadow-lg flex items-center gap-2">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                    Peça pelo WhatsApp
-                </a>
-            </nav>
+        <button
+          id="mobile-menu-btn"
+          class="md:hidden text-primary-dark focus:outline-none"
+        >
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
 
-            <button id="mobile-menu-btn" class="md:hidden text-primary-dark focus:outline-none">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-            </button>
-        </div>
-
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full">
-            <a href="#inicio" class="block px-6 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary">Início</a>
-            <a href="#sobre" class="block px-6 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary">Sobre Nós</a>
-            <a href="#servicos" class="block px-6 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary">Serviços</a>
-            <a href="#galeria" class="block px-6 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary">Galeria</a>
-            <a href="#contato" class="block px-6 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary">Contato</a>
-            <a href="https://wa.me/556884214918" target="_blank" class="block px-6 py-3 text-primary font-bold">Peça pelo WhatsApp</a>
-        </div>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full"
+      >
+        <a
+          href="#inicio"
+          class="block px-6 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary"
+          >Início</a
+        >
+        <a
+          href="#sobre"
+          class="block px-6 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary"
+          >Sobre Nós</a
+        >
+        <a
+          href="#servicos"
+          class="block px-6 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary"
+          >Serviços</a
+        >
+        <a
+          href="#galeria"
+          class="block px-6 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary"
+          >Galeria</a
+        >
+        <a
+          href="#contato"
+          class="block px-6 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary"
+          >Contato</a
+        >
+        <a
+          href="https://wa.me/5568999433634"
+          target="_blank"
+          class="block px-6 py-3 text-primary font-bold"
+          >Peça pelo WhatsApp</a
+        >
+      </div>
     </header>
 
     <main>
-        <section id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden">
-            <div class="absolute inset-0 z-0">
-                <img src="img/4.jpg" alt="Fachada Vitória Régia" class="w-full h-full object-cover filter brightness-50">
+      <section
+        id="inicio"
+        class="relative h-screen flex items-center justify-center overflow-hidden"
+      >
+        <div class="absolute inset-0 z-0">
+          <img
+            src="img/4.jpg"
+            alt="Fachada Vitória Régia"
+            class="w-full h-full object-cover filter brightness-50"
+          />
+        </div>
+
+        <div
+          class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto fade-in-element"
+        >
+          <h1 class="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg">
+            Vitória Régia
+          </h1>
+          <p class="text-xl md:text-2xl mb-10 font-light tracking-wide">
+            Saúde, confiança e inovação no Acre há 40 anos.
+          </p>
+          <a
+            href="https://wa.me/5568999433634"
+            class="inline-block bg-primary hover:bg-primary-light text-white text-lg px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-xl uppercase font-bold tracking-wider"
+          >
+            Faça seu Pedido
+          </a>
+        </div>
+      </section>
+
+      <section id="sobre" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="max-w-4xl mx-auto text-center fade-in-element">
+            <h2
+              class="text-3xl font-bold text-primary-dark mb-8 uppercase tracking-wide"
+            >
+              Nossa História
+            </h2>
+
+            <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
+              <p>
+                Há 40 anos, a <strong>Farmácia Vitória Régia</strong> é sinônimo
+                de saúde, confiança e inovação no Acre. Fundada por Geize,
+                pioneira em manipulação no estado, a empresa cresceu, superou
+                desafios e hoje atende gerações, unindo tradição familiar,
+                atendimento humanizado e tecnologia de ponta.
+              </p>
+              <p>
+                Atualmente, essa história é representada por três mulheres que
+                conduzem o negócio com paixão: Geize Laine, Letícia de Pardo e
+                Elizabeth Dias. Do início até hoje, seguimos firmes com um
+                propósito claro: oferecer qualidade, confiança e acolhimento em
+                cada etapa dessa jornada.
+              </p>
+              <p class="font-medium text-primary italic">
+                "Cuidar é nossa raiz. Crescer é nosso florescer."
+              </p>
             </div>
-            
-            <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto fade-in-element">
-                <h1 class="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg">Vitória Régia</h1>
-                <p class="text-xl md:text-2xl mb-10 font-light tracking-wide">Saúde, confiança e inovação no Acre há 40 anos.</p>
-                <a href="https://wa.me/556884214918" class="inline-block bg-primary hover:bg-primary-light text-white text-lg px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-xl uppercase font-bold tracking-wider">
-                    Faça seu Pedido
-                </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicos" class="py-20 bg-secondary">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2
+              class="text-3xl font-bold text-primary-dark mb-4 uppercase tracking-wide"
+            >
+              O Que Oferecemos
+            </h2>
+            <p class="text-gray-600">
+              Soluções completas para a sua saúde e bem-estar.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow transform hover:-translate-y-1 fade-in-element"
+            >
+              <svg
+                class="w-12 h-12 text-primary mx-auto mb-4"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill="currentColor">
+                  <path fill="none" d="M0 0H24V24H0z" />
+                  <path
+                    d="M19 2v2h-2v3c1.657 0 3 1.343 3 3v11c0 .552-.448 1-1 1H5c-.552 0-1-.448-1-1V10c0-1.657 1.343-3 3-3V4H5V2h14zm-2 7H7c-.552 0-1 .448-1 1v10h12V10c0-.552-.448-1-1-1zm-4 2v2h2v2h-2.001L13 17h-2l-.001-2H9v-2h2v-2h2zm2-7H9v3h6V4z"
+                  />
+                </g>
+              </svg>
+              <h3 class="text-xl font-bold text-center text-gray-800 mb-3">
+                Manipulação de Fórmulas
+              </h3>
+              <p class="text-gray-600 text-center">
+                Medicamentos personalizados feitos sob medida para sua
+                necessidade, garantindo a dosagem exata e a máxima eficácia no
+                seu tratamento.
+              </p>
             </div>
-        </section>
 
-        <section id="sobre" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="max-w-4xl mx-auto text-center fade-in-element">
-                    <h2 class="text-3xl font-bold text-primary-dark mb-8 uppercase tracking-wide">Nossa História</h2>
-                    
-                    <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
-                        <p>
-                            Há 40 anos, a <strong>Farmácia Vitória Régia</strong> é sinônimo de saúde, confiança e inovação no Acre. 
-                            Fundada por Geize, pioneira em manipulação no estado, a empresa cresceu, superou desafios e hoje atende gerações, 
-                            unindo tradição familiar, atendimento humanizado e tecnologia de ponta.
-                        </p>
-                        <p>
-                            Atualmente, essa história é representada por três mulheres que conduzem o negócio com paixão: 
-                            Geize Laine, Letícia de Pardo e Elizabeth Dias. Do início até hoje, seguimos firmes com um propósito claro: 
-                            oferecer qualidade, confiança e acolhimento em cada etapa dessa jornada.
-                        </p>
-                        <p class="font-medium text-primary italic">
-                            "Cuidar é nossa raiz. Crescer é nosso florescer."
-                        </p>
-                    </div>
-                </div>
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow transform hover:-translate-y-1 fade-in-element delay-100"
+            >
+              <svg
+                class="w-12 h-12 text-primary mx-auto mb-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M18.4832 15.0004C19.4722 13.5203 20 11.7803 20 10.0002V8.23631C20 7.85754 20.214 7.51128 20.5528 7.34189L21.4472 6.89467C21.9412 6.64768 22.1414 6.04701 21.8944 5.55303C21.6474 5.05905 21.0468 4.85883 20.5528 5.10582L19.6584 5.55303C18.642 6.06121 18 7.1 18 8.23631V9.00024L12 9.00024V2.00024C12 1.44796 11.5523 1.00024 11 1.00024C9.21996 1.00024 7.47991 1.52808 5.99986 2.51702C4.51982 3.50595 3.36627 4.91156 2.68508 6.55609C2.00389 8.20063 1.82566 10.0102 2.17293 11.7561C2.5202 13.5019 3.37736 15.1055 4.63604 16.3642C4.88278 16.611 5.14279 16.8423 5.41453 17.0573C4.03795 17.3297 3 18.5437 3 20.0002C3 21.6571 4.34314 23.0002 6 23.0002C7.65685 23.0002 9 21.6571 9 20.0002C9 19.5356 8.89434 19.0955 8.70575 18.7029C8.88354 18.7498 9.0631 18.7913 9.24418 18.8273C10.5913 19.0953 11.9763 19.0504 13.2942 18.7029C13.1057 19.0955 13 19.5356 13 20.0002C13 21.6571 14.3431 23.0002 16 23.0002C17.6569 23.0002 19 21.6571 19 20.0002C19 18.5437 17.962 17.3297 16.5855 17.0573C17.3175 16.4779 17.9589 15.785 18.4832 15.0004ZM16.7834 13.8646C17.3611 13.0001 17.7352 12.0209 17.8834 11.0002L4.11656 11.0002C4.13389 11.1195 4.15435 11.2386 4.17795 11.3572C4.44634 12.7065 5.10881 13.9459 6.08158 14.9187C7.05435 15.8914 8.29374 16.5539 9.64301 16.8223C10.9923 17.0907 12.3908 16.9529 13.6618 16.4265C14.9328 15.9 16.0191 15.0085 16.7834 13.8646ZM10 3.1168V9.00024L4.11656 9.00024C4.19904 8.43247 4.35188 7.87411 4.57377 7.33842C5.10023 6.06743 5.99176 4.9811 7.13562 4.2168C8.0001 3.63917 8.97936 3.26508 10 3.1168ZM6 21.0079C5.44349 21.0079 4.99235 20.5568 4.99235 20.0002C4.99235 19.4437 5.44349 18.9926 6 18.9926C6.5565 18.9926 7.00764 19.4437 7.00764 20.0002C7.00764 20.5568 6.5565 21.0079 6 21.0079ZM14.9924 20.0002C14.9924 20.5568 15.4435 21.0079 16 21.0079C16.5565 21.0079 17.0076 20.5568 17.0076 20.0002C17.0076 19.4437 16.5565 18.9926 16 18.9926C15.4435 18.9926 14.9924 19.4437 14.9924 20.0002Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <h3 class="text-xl font-bold text-center text-gray-800 mb-3">
+                Baby, Kids & Home
+              </h3>
+              <p class="text-gray-600 text-center">
+                Referência em enxovais completos, móveis e roupas. Cuidado e
+                carinho desde o primeiro dia de vida do seu bebê.
+              </p>
             </div>
-        </section>
 
-        <section id="servicos" class="py-20 bg-secondary">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl font-bold text-primary-dark mb-4 uppercase tracking-wide">O Que Oferecemos</h2>
-                    <p class="text-gray-600">Soluções completas para a sua saúde e bem-estar.</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-                    
-                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow transform hover:-translate-y-1 fade-in-element">
-                        <svg class="w-12 h-12 text-primary mx-auto mb-4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <g fill="currentColor"> <path fill="none" d="M0 0H24V24H0z" /> <path d="M19 2v2h-2v3c1.657 0 3 1.343 3 3v11c0 .552-.448 1-1 1H5c-.552 0-1-.448-1-1V10c0-1.657 1.343-3 3-3V4H5V2h14zm-2 7H7c-.552 0-1 .448-1 1v10h12V10c0-.552-.448-1-1-1zm-4 2v2h2v2h-2.001L13 17h-2l-.001-2H9v-2h2v-2h2zm2-7H9v3h6V4z" /> </g> </svg>
-                        <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Manipulação de Fórmulas</h3>
-                        <p class="text-gray-600 text-center">
-                            Medicamentos personalizados feitos sob medida para sua necessidade, garantindo a dosagem exata e a máxima eficácia no seu tratamento.
-                        </p>
-                    </div>
-
-                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow transform hover:-translate-y-1 fade-in-element delay-100">
-                        <svg class="w-12 h-12 text-primary mx-auto mb-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.4832 15.0004C19.4722 13.5203 20 11.7803 20 10.0002V8.23631C20 7.85754 20.214 7.51128 20.5528 7.34189L21.4472 6.89467C21.9412 6.64768 22.1414 6.04701 21.8944 5.55303C21.6474 5.05905 21.0468 4.85883 20.5528 5.10582L19.6584 5.55303C18.642 6.06121 18 7.1 18 8.23631V9.00024L12 9.00024V2.00024C12 1.44796 11.5523 1.00024 11 1.00024C9.21996 1.00024 7.47991 1.52808 5.99986 2.51702C4.51982 3.50595 3.36627 4.91156 2.68508 6.55609C2.00389 8.20063 1.82566 10.0102 2.17293 11.7561C2.5202 13.5019 3.37736 15.1055 4.63604 16.3642C4.88278 16.611 5.14279 16.8423 5.41453 17.0573C4.03795 17.3297 3 18.5437 3 20.0002C3 21.6571 4.34314 23.0002 6 23.0002C7.65685 23.0002 9 21.6571 9 20.0002C9 19.5356 8.89434 19.0955 8.70575 18.7029C8.88354 18.7498 9.0631 18.7913 9.24418 18.8273C10.5913 19.0953 11.9763 19.0504 13.2942 18.7029C13.1057 19.0955 13 19.5356 13 20.0002C13 21.6571 14.3431 23.0002 16 23.0002C17.6569 23.0002 19 21.6571 19 20.0002C19 18.5437 17.962 17.3297 16.5855 17.0573C17.3175 16.4779 17.9589 15.785 18.4832 15.0004ZM16.7834 13.8646C17.3611 13.0001 17.7352 12.0209 17.8834 11.0002L4.11656 11.0002C4.13389 11.1195 4.15435 11.2386 4.17795 11.3572C4.44634 12.7065 5.10881 13.9459 6.08158 14.9187C7.05435 15.8914 8.29374 16.5539 9.64301 16.8223C10.9923 17.0907 12.3908 16.9529 13.6618 16.4265C14.9328 15.9 16.0191 15.0085 16.7834 13.8646ZM10 3.1168V9.00024L4.11656 9.00024C4.19904 8.43247 4.35188 7.87411 4.57377 7.33842C5.10023 6.06743 5.99176 4.9811 7.13562 4.2168C8.0001 3.63917 8.97936 3.26508 10 3.1168ZM6 21.0079C5.44349 21.0079 4.99235 20.5568 4.99235 20.0002C4.99235 19.4437 5.44349 18.9926 6 18.9926C6.5565 18.9926 7.00764 19.4437 7.00764 20.0002C7.00764 20.5568 6.5565 21.0079 6 21.0079ZM14.9924 20.0002C14.9924 20.5568 15.4435 21.0079 16 21.0079C16.5565 21.0079 17.0076 20.5568 17.0076 20.0002C17.0076 19.4437 16.5565 18.9926 16 18.9926C15.4435 18.9926 14.9924 19.4437 14.9924 20.0002Z" fill="currentColor"/>
-                        </svg>
-                        <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Baby, Kids & Home</h3>
-                        <p class="text-gray-600 text-center">
-                            Referência em enxovais completos, móveis e roupas. Cuidado e carinho desde o primeiro dia de vida do seu bebê.
-                        </p>
-                    </div>
-
-                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow transform hover:-translate-y-1 fade-in-element delay-200">
-                         <svg class="w-12 h-12 text-primary mx-auto mb-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle cx="10" cy="6" r="4" stroke="currentColor" stroke-width="1.5"/> <path d="M19 2C19 2 21 3.2 21 6C21 8.8 19 10 19 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/> <path d="M17 4C17 4 18 4.6 18 6C18 7.4 17 8 17 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/> <path d="M17.9975 18C18 17.8358 18 17.669 18 17.5C18 15.0147 14.4183 13 10 13C5.58172 13 2 15.0147 2 17.5C2 19.9853 2 22 10 22C12.231 22 13.8398 21.8433 15 21.5634" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                        <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Atendimento Humanizado</h3>
-                        <p class="text-gray-600 text-center">
-                            Cuidar é mais do que entregar um medicamento. Oferecemos atenção farmacêutica, escuta e dedicação em cada atendimento.
-                        </p>
-                    </div>
-
-                </div>
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow transform hover:-translate-y-1 fade-in-element delay-200"
+            >
+              <svg
+                class="w-12 h-12 text-primary mx-auto mb-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="10"
+                  cy="6"
+                  r="4"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M19 2C19 2 21 3.2 21 6C21 8.8 19 10 19 10"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M17 4C17 4 18 4.6 18 6C18 7.4 17 8 17 8"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M17.9975 18C18 17.8358 18 17.669 18 17.5C18 15.0147 14.4183 13 10 13C5.58172 13 2 15.0147 2 17.5C2 19.9853 2 22 10 22C12.231 22 13.8398 21.8433 15 21.5634"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <h3 class="text-xl font-bold text-center text-gray-800 mb-3">
+                Atendimento Humanizado
+              </h3>
+              <p class="text-gray-600 text-center">
+                Cuidar é mais do que entregar um medicamento. Oferecemos atenção
+                farmacêutica, escuta e dedicação em cada atendimento.
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="galeria" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center text-primary-dark mb-12 uppercase tracking-wide">Nossa Estrutura</h2>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div class="group overflow-hidden rounded-lg shadow-lg h-64 fade-in-element">
-                        <img src="img/1.jpg" alt="Manipulação de Cápsulas" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="group overflow-hidden rounded-lg shadow-lg h-64 fade-in-element">
-                        <img src="img/2.jpg" alt="Doces Medicamentosos" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="group overflow-hidden rounded-lg shadow-lg h-64 fade-in-element">
-                        <img src="img/3.jpg" alt="Homeopatia" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                </div>
+      <section id="galeria" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <h2
+            class="text-3xl font-bold text-center text-primary-dark mb-12 uppercase tracking-wide"
+          >
+            Nossa Estrutura
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div
+              class="group overflow-hidden rounded-lg shadow-lg h-64 fade-in-element"
+            >
+              <img
+                src="img/1.jpg"
+                alt="Manipulação de Cápsulas"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
             </div>
-        </section>
-
-        <section id="contato" class="py-0 bg-gray-100">
-            <div class="grid grid-cols-1 lg:grid-cols-2 min-h-[500px]">
-                
-                <div class="p-12 flex flex-col justify-center bg-primary-dark text-white">
-                    <h2 class="text-3xl font-bold mb-8 border-b-2 border-primary-light pb-4 inline-block w-full">Contato e Localização</h2>
-                    
-                    <ul class="space-y-6 text-lg font-light">
-                        <li>
-                            <strong class="block text-primary-light uppercase text-sm tracking-wider mb-1">Empresa</strong>
-                            G. L. DE PARDO & CIA LTDA <br> (Vitória Régia)
-                        </li>
-                        <li>
-                            <strong class="block text-primary-light uppercase text-sm tracking-wider mb-1">CNPJ</strong>
-                            05.397.377/0001-40
-                        </li>
-                        <li>
-                            <strong class="block text-primary-light uppercase text-sm tracking-wider mb-1">Endereço</strong>
-                            Bairro Dom Giocondo, Nº 88<br>
-                            Rio Branco - AC <br>
-                            CEP: 69.900-309
-                        </li>
-                        <li>
-                            <strong class="block text-primary-light uppercase text-sm tracking-wider mb-1">Contato</strong>
-                            Telefone/WhatsApp: (68) 8421-4918 <br>
-                            Email: RNLALBUQUERQUE@HOTMAIL.COM
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="h-[500px] lg:h-auto w-full">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.5!2d-67.8!3d-9.97!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zO3c1OC4yJzEwLjUiUyA2N8KwNDgnMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1600000000000!5m2!1spt-BR!2sbr" 
-                        width="100%" 
-                        height="100%" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        class="w-full h-full grayscale hover:grayscale-0 transition-all duration-500">
-                    </iframe>
-                </div>
+            <div
+              class="group overflow-hidden rounded-lg shadow-lg h-64 fade-in-element"
+            >
+              <img
+                src="img/2.jpg"
+                alt="Doces Medicamentosos"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
             </div>
-        </section>
+            <div
+              class="group overflow-hidden rounded-lg shadow-lg h-64 fade-in-element"
+            >
+              <img
+                src="img/3.jpg"
+                alt="Homeopatia"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="py-0 bg-gray-100">
+        <div class="grid grid-cols-1 lg:grid-cols-2 min-h-[500px]">
+          <div
+            class="p-12 flex flex-col justify-center bg-primary-dark text-white"
+          >
+            <h2
+              class="text-3xl font-bold mb-8 border-b-2 border-primary-light pb-4 inline-block w-full"
+            >
+              Contato e Localização
+            </h2>
+
+            <ul class="space-y-6 text-lg font-light">
+              <li>
+                <strong
+                  class="block text-primary-light uppercase text-sm tracking-wider mb-1"
+                  >Empresa</strong
+                >
+                G. L. DE PARDO & CIA LTDA <br />
+                (Vitória Régia)
+              </li>
+              <li>
+                <strong
+                  class="block text-primary-light uppercase text-sm tracking-wider mb-1"
+                  >CNPJ</strong
+                >
+                05.397.377/0001-40
+              </li>
+              <li>
+                <strong
+                  class="block text-primary-light uppercase text-sm tracking-wider mb-1"
+                  >Endereço</strong
+                >
+                Bairro Dom Giocondo, Nº 88<br />
+                Rio Branco - AC <br />
+                CEP: 69.900-309
+              </li>
+              <li>
+                <strong
+                  class="block text-primary-light uppercase text-sm tracking-wider mb-1"
+                  >Contato</strong
+                >
+                Telefone/WhatsApp: (68) 3224-2880 | (68) 99943-3634 <br />
+                Email: VITORIA.ACRE@YAHOO.COM
+              </li>
+            </ul>
+          </div>
+
+          <div class="h-[500px] lg:h-auto w-full">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d868.8632923185463!2d-67.81619850120902!3d-9.97089550654358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x917f8c53f039918f%3A0xc29698b37ce1d305!2sR.%20Rio%20de%20Janeiro%2C%2088%20-%20Centro!5e0!3m2!1spt-BR!2sbr!4v1764171454705!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="w-full h-full"
+            ></iframe>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="bg-gray-900 text-gray-400 py-8 text-center">
-        <div class="container mx-auto px-6">
-            <p>© 2025 Farmácia Vitória Régia. Todos os direitos reservados.</p>
-            <button id="privacy-btn" class="text-sm mt-2 hover:text-white underline transition-colors">Política de Privacidade</button>
-        </div>
+      <div class="container mx-auto px-6">
+        <p>© 2025 Farmácia Vitória Régia. Todos os direitos reservados.</p>
+        <button
+          id="privacy-btn"
+          class="text-sm mt-2 hover:text-white underline transition-colors"
+        >
+          Política de Privacidade
+        </button>
+      </div>
     </footer>
 
-    <div id="privacy-modal" class="fixed inset-0 z-50 hidden overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-        <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-            <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" id="modal-overlay" aria-hidden="true"></div>
-            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">​</span>
-            
-            <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
-                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                    <h3 class="text-lg leading-6 font-medium text-gray-900 mb-4" id="modal-title">Política de Privacidade</h3>
-                    <div class="mt-2 text-sm text-gray-500 space-y-3">
-                        <p>A sua privacidade é importante para nós. É política da Vitória Régia respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site Vitória Régia, e outros sites que possuímos e operamos.</p>
-                        <p>Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento.</p>
-                        <p>Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei.</p>
-                    </div>
-                </div>
-                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-                    <button id="close-modal" type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-primary text-base font-medium text-white hover:bg-primary-dark focus:outline-none sm:ml-3 sm:w-auto sm:text-sm">
-                        Fechar
-                    </button>
-                </div>
+    <div
+      id="privacy-modal"
+      class="fixed inset-0 z-50 hidden overflow-y-auto"
+      aria-labelledby="modal-title"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div
+        class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
+      >
+        <div
+          class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+          id="modal-overlay"
+          aria-hidden="true"
+        ></div>
+        <span
+          class="hidden sm:inline-block sm:align-middle sm:h-screen"
+          aria-hidden="true"
+          >​</span
+        >
+
+        <div
+          class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
+        >
+          <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+            <h3
+              class="text-lg leading-6 font-medium text-gray-900 mb-4"
+              id="modal-title"
+            >
+              Política de Privacidade
+            </h3>
+            <div class="mt-2 text-sm text-gray-500 space-y-3">
+              <p>
+                A sua privacidade é importante para nós. É política da Vitória
+                Régia respeitar a sua privacidade em relação a qualquer
+                informação sua que possamos coletar no site Vitória Régia, e
+                outros sites que possuímos e operamos.
+              </p>
+              <p>
+                Solicitamos informações pessoais apenas quando realmente
+                precisamos delas para lhe fornecer um serviço. Fazemo-lo por
+                meios justos e legais, com o seu conhecimento e consentimento.
+              </p>
+              <p>
+                Não compartilhamos informações de identificação pessoal
+                publicamente ou com terceiros, exceto quando exigido por lei.
+              </p>
             </div>
+          </div>
+          <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+            <button
+              id="close-modal"
+              type="button"
+              class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-primary text-base font-medium text-white hover:bg-primary-dark focus:outline-none sm:ml-3 sm:w-auto sm:text-sm"
+            >
+              Fechar
+            </button>
+          </div>
         </div>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
